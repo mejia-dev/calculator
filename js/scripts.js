@@ -1,11 +1,7 @@
-function saySomething(whatToSay) {
-  window.alert(whatToSay);
-}
-
+// business logic
 function add(number1, number2) {
   return number1 + number2;
 }
 
-const result = add(3,5);
-const outputText = "The sum is " + result + ".";
-saySomething(outputText);
+// user interface logic 
+window.alert(add(10,5));
