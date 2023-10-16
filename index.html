@@ -2,10 +2,32 @@
 <html lang="en-US">
   <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/scripts.js"?></script>
+    <script src="js/calculator-gui.js"?></script>
     <title>Calculator</title>
   </head>
   <body>
     <h1>Calculator</h1>
+    <br>
+    <p class=inputBox>0</p>
+    <div class="buttonsRow1">
+      <button onclick="appendValue(7)">7</button>
+      <button onclick="appendValue(8)">8</button>
+      <button onclick="appendValue(9)">9</button>
+    </div>
+    <div class="buttonsRow2">
+      <button onclick="appendValue(4)">4</button>
+      <button onclick="appendValue(5)">5</button>
+      <button onclick="appendValue(6)">6</button>
+    </div>
+    <div class="buttonsRow3">
+      <button onclick="appendValue(1)">1</button>
+      <button onclick="appendValue(2)">2</button>
+      <button onclick="appendValue(3)">3</button>
+    </div>
+    <div class="buttonsRow4">
+      <button onclick="appendValue('.')">.</button>
+      <button onclick="calculateData">Enter</button>
+    </div>
+    
   </body>
 </html>
