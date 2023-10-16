@@ -8,7 +8,7 @@
   <body>
     <h1>Calculator</h1>
     <br>
-    <p class=inputBox>0</p>
+    <p id=inputBox>0</p>
     <div class="buttonsRow1">
       <button onclick="appendValue(7)">7</button>
       <button onclick="appendValue(8)">8</button>
@@ -26,7 +26,8 @@
     </div>
     <div class="buttonsRow4">
       <button onclick="appendValue('.')">.</button>
-      <button onclick="calculateData">Enter</button>
+      <button onclick="calculateData()">Enter</button>
+      <button onclick="clearInput()">CLR</button>
     </div>
     
   </body>
