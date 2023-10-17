@@ -35,6 +35,7 @@ function appendDecimal() {
 function clearInput() {
   inputVar = "";
   inputVar = "0";
+  numberOfNumbers = 1;
   document.getElementById("inputBox").innerText = inputVar.toString();
 }
 
@@ -53,8 +54,8 @@ function backSpace() {
     document.getElementById("inputBox").innerText = inputVar.toString();
     if (inputVar === "") {
       inputVar = "0";
-      document.getElementById("inputBox").innerText = inputVar.toString();
       numberOfNumbers = 1;
+      document.getElementById("inputBox").innerText = inputVar.toString();
     }
   }
 
@@ -64,24 +65,24 @@ function backSpace() {
 // Math Buttons
 function buttonAdd() {
   inputVar += " + ";
-  document.getElementById("inputBox").innerText = inputVar.toString();
   numberOfNumbers = (1 + numberOfNumbers);
+  document.getElementById("inputBox").innerText = inputVar.toString();
 }
 
 function buttonSubtract() {
   inputVar += " - ";
-  document.getElementById("inputBox").innerText = inputVar.toString();
   numberOfNumbers = (1 + numberOfNumbers);
+  document.getElementById("inputBox").innerText = inputVar.toString();
 }
 
 function buttonMultiply() {
   inputVar += " * ";
-  document.getElementById("inputBox").innerText = inputVar.toString();
   numberOfNumbers = (1 + numberOfNumbers);
+  document.getElementById("inputBox").innerText = inputVar.toString();
 }
 
 function buttonDivide() {
   inputVar += " / ";
-  document.getElementById("inputBox").innerText = inputVar.toString();
   numberOfNumbers = (1 + numberOfNumbers);
+  document.getElementById("inputBox").innerText = inputVar.toString();
 }
