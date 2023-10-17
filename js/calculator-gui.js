@@ -1,5 +1,9 @@
+// Main variable declarations
 let inputVar = "";
 let numberOfNumbers = 1;
+
+
+// Data append functions
 
 function appendValue(num1) {
   
@@ -25,12 +29,14 @@ function appendDecimal() {
 
 }
 
+// Data removal functions
 
 function clearInput() {
   inputVar = "";
   inputVar = "0";
   document.getElementById("inputBox").innerText=inputVar.toString();
 }
+
 
 // Math Buttons
 function buttonAdd() {
