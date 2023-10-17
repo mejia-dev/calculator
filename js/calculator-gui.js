@@ -1,15 +1,31 @@
 let inputVar = "";
 
 function appendValue(num1) {
-  inputVar += num1.toString();
-  document.getElementById("inputBox").innerText=inputVar.toString();
+  
+  if (inputVar.includes(0) && (inputVar.length < 2)) {
+    inputVar = "";
+    inputVar += num1.toString();
+    document.getElementById("inputBox").innerText=inputVar.toString();
+  }
+  else {
+    inputVar += num1.toString();
+    document.getElementById("inputBox").innerText=inputVar.toString();
+  }
 }
 
 function appendDecimal() {
-  if !inputVar.includes(".")
+  if (inputVar.includes(".")) {
+    "";
+  }
+  else {
+    inputVar += ".";
+    document.getElementById("inputBox").innerText=inputVar.toString();
+  }
+
 }
 
 function clearInput() {
   inputVar = "";
+  inputVar = "0";
   document.getElementById("inputBox").innerText=inputVar.toString();
 }
