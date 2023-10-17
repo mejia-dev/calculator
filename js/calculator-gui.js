@@ -1,6 +1,8 @@
 // Main variable declarations
 let inputVar = "";
 let numberOfNumbers = 1;
+let currentResult = 0;
+let lastResult = "null";
 
 
 // Data append functions
@@ -85,4 +87,12 @@ function buttonDivide() {
   inputVar += " / ";
   numberOfNumbers = (1 + numberOfNumbers);
   document.getElementById("inputBox").innerText = inputVar.toString();
+}
+
+function buttonEquals() {
+  currentResult = eval(inputVar);
+  document.getElementById("lastResult").innerText = currentResult.toString();
+  // inputVar += " / ";
+  // numberOfNumbers = (1 + numberOfNumbers);
+  // document.getElementById("inputBox").innerText = inputVar.toString();
 }
