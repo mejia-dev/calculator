@@ -37,6 +37,29 @@ function clearInput() {
   document.getElementById("inputBox").innerText=inputVar.toString();
 }
 
+function backSpace() {
+  if (isNaN(parseInt(inputVar.slice(-1)))) {
+    window.alert("NOT A NUMBER!!!")
+    inputVar = inputVar.substring(0, inputVar.length - 3);
+    numberOfNumbers = (numberOfNumbers - 1);
+    document.getElementById("inputBox").innerText=inputVar.toString();
+      if (inputVar === "") {
+        inputVar = "0";
+        document.getElementById("inputBox").innerText=inputVar.toString();
+      }
+  }
+  else {
+    inputVar = inputVar.substring(0, inputVar.length - 1);
+    document.getElementById("inputBox").innerText=inputVar.toString();
+      if (inputVar === "") {
+        inputVar = "0";
+        document.getElementById("inputBox").innerText=inputVar.toString();
+        numberOfNumbers = 1;
+      }
+  }
+
+}
+
 
 // Math Buttons
 function buttonAdd() {
