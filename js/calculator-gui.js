@@ -42,7 +42,7 @@ function clearInput() {
 }
 
 function backSpace() {
-  if (isNaN(parseInt(inputVar.slice(-1))) && !".") {
+  if (isNaN(parseInt(inputVar.slice(-1))) && !(inputVar.slice(-1)).includes(".") ) {
     inputVar = inputVar.substring(0, inputVar.length - 3);
     numberOfNumbers = (numberOfNumbers - 1);
     document.getElementById("inputBox").innerText = inputVar.toString();
